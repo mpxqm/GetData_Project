@@ -13,10 +13,16 @@ Tidy Data Files
 * 180 rows and 81 columns
 * Aggregates the mean of each feature for each activity and each subject
 
-##### columns of tidy.txt and tidy_aggregated.txt
-* column 1 : "Subject" : subject ID number for 30 subjects (1-30)
-* column 2 : "Activity" : factor variable with six levels (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) representing the physical activity performed by the subject during the measurement
-* columns 3-81 : Quantified "mean" and "std" features (described below) named with the pattern [t|f][description].[mean|std] optionally followed by .[X|Y|Z], e.g. tBodyGyroJerk.mean.X or fBodyBodyGyroMag.mean
+##### Variables stored in tidy.txt and tidy_aggregated.txt
+* column 1 : "Subject" : Subject ID number for 30 subjects (1-30)
+* column 2 : "Activity" : Factor variable with six levels representing the physical activity performed by the subject during the measurement. Values include:
+	* WALKING
+	* WALKING_UPSTAIRS
+	* WALKING_DOWNSTAIRS
+	* SITTING
+	* STANDING
+	* LAYING 
+* columns 3-81 : Quantified "mean" and "std" features (described below) named with the pattern [t|f][description].[mean|std] optionally followed by .[X|Y|Z], e.g. <code>tBodyGyroJerk.mean.X</code> or <code>fBodyBodyGyroMag.mean</code>
 	* t and f stand for time domain and frequency domain respectively
 	* mean and std stand for average and standard deviation respectively
 	* X, Y and Z represent Cartesian directions of the accelerometer coordinate frame
